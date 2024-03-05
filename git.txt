@@ -1,0 +1,185 @@
+package days13;
+
+import days14.Time;
+import days14.Tv;
+
+/**
+ * @author yujin
+ * @date 2024. 1. 17. - 오전 10:06:05
+ * @subject
+ * @content
+ */
+public class Ex01 {
+	public static void main(String[] args) {
+		
+		Tv tv1 = new Tv();
+		Time t = new Time();
+		t.hour = 1;
+		//Student s1 = new Student();
+		//Git 설치
+		//New Repository - javaPro
+		//token : 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
+		//E:\Class\Workspace\javaClass-Home(집)
+		//E:\Class\Workspace\javaClass-SiSt(교육원)
+
+		//Git 사용자 등록
+		//		$ git config --global user.name"사용자이름"
+		//		$ git config --global user.email"사용자이메일"
+
+		//등록 확인
+		//		$ git config user.name
+		//		$ git config user.email
+		//		$ git config -l
+
+		//원격 저장소(repository) 등록 확인
+		//		$ git remote -v
+		//		fatal: not a git repository (or any of the parent directories): .git
+
+		//로컬 저장소 생성
+		//$ git init
+		//Initialized empty Git repository in E:/Class/Workspace/javaClass-SiSt/.git/
+
+		//ls
+		//user@DESKTOP-COJ9858 MINGW64 /e/Class/Workspace/javaClass-SiSt (master)
+		//		$ls
+
+		//java.project : gitPro
+		//		.gitignore 파일 확인 -> /.metadata/
+
+		/*깃 상태 확인
+		 * $ git status 
+		 * //On branch master
+		 * 
+		 * No commits yet
+		 * 
+		 * Untracked files: (use "git add <file>..." to include in what will be		-> Untracked : 관리대상 X
+		 * committed)  
+		 * 				.gitignore  
+		 * 				Hello.java 
+		 * 				gitPro/
+		 * 
+		 * nothing added to commit but untracked files present (use "git add" to track)
+		 */
+
+		//다시 원격 저장소 확인 -> 원격 저장소 등록
+		//원격 저장소 URL = https://github.com/yuejin0608/javaPro.git
+		//							(별칭)
+		//$ git remote add origin https://github.com/yuejin0608/javaPro.git
+
+		//$ git remote -v
+		//origin  https://github.com/yuejin0608/javaPro.git (fetch)
+		//origin  https://github.com/yuejin0608/javaPro.git (push)
+
+		/*
+		$ git add -h
+		usage: git add [<options>] [--] <pathspec>...
+
+		    -n, --[no-]dry-run    dry run
+		    -v, --[no-]verbose    be verbose
+
+		    -i, --[no-]interactive
+		                          interactive picking
+		    -p, --[no-]patch      select hunks interactively
+		    -e, --[no-]edit       edit current diff and apply
+		    -f, --[no-]force      allow adding otherwise ignored files
+		    -u, --[no-]update     update tracked files
+		    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+		    -N, --[no-]intent-to-add
+		                          record only the fact that the path will be added later
+		    -A, --[no-]all        add changes from all tracked and untracked files
+		    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+		    --[no-]refresh        don't add, only refresh the index
+		    --[no-]ignore-errors  just skip files which cannot be added because of errors
+		    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+		    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+		    --[no-]chmod (+|-)x   override the executable bit of the listed files
+		    --[no-]pathspec-from-file <file>
+		                          read pathspec from file
+		    --[no-]pathspec-file-nul
+		                          with --pathspec-from-file, pathspec elements are separated with NUL character
+		 */
+
+
+		//스테이징 영역(staging Area) 추가
+		/*
+		$ git status
+		On branch master
+
+		No commits yet
+
+		Changes to be committed:
+		  (use "git rm --cached <file>..." to unstage)
+		        new file:   .gitignore
+		        new file:   Hello.java
+		        new file:   gitPro/.classpath
+		        new file:   gitPro/.gitignore
+		        new file:   gitPro/.project
+		        new file:   gitPro/.settings/org.eclipse.jdt.core.prefs
+		        new file:   gitPro/src/gitPro/Sample.java
+		 */
+
+
+		//로컬 저장소(git directory) 추가
+		/*
+		$ git commit -m "first javaPro commit"
+		[master (root-commit) c9131a4] first javaPro commit
+		 7 files changed, 57 insertions(+)
+		 create mode 100644 .gitignore
+		 create mode 100644 Hello.java
+		 create mode 100644 gitPro/.classpath
+		 create mode 100644 gitPro/.gitignore
+		 create mode 100644 gitPro/.project
+		 create mode 100644 gitPro/.settings/org.eclipse.jdt.core.prefs
+		 create mode 100644 gitPro/src/gitPro/Sample.java
+		 */
+
+		//원격저장소 추가
+		/*
+		$ git push --set-upstream origin master
+		Enumerating objects: 13, done.
+		Counting objects: 100% (13/13), done.
+		Delta compression using up to 8 threads
+		Compressing objects: 100% (9/9), done.
+		Writing objects: 100% (13/13), 1.47 KiB | 751.00 KiB/s, done.
+		Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+		To https://github.com/yuejin0608/javaPro.git
+		 * [new branch]      master -> master
+		branch 'master' set up to track 'origin/master'.
+		 */
+
+		//JavaClass-SiSt(교육원 -> 원격저장소 저장)
+		//교육원 -> 집 -- JavaClass-Home폴더(집)
+		//		1)E:\Class\Workspace\javaClass-Home 폴더 이동
+		//		2)Git Repository(깃 로컬 저장소)생성
+		//			Git init X
+		//			Git clone
+		/*
+		$ git clone https://github.com/yuejin0608/javaPro.git JavaClass
+			Cloning into 'JavaClass'...
+			remote: Enumerating objects: 19, done.
+			remote: Counting objects: 100% (19/19), done.
+			remote: Compressing objects: 100% (11/11), done.
+			remote: Total 19 (delta 2), reused 19 (delta 2), pack-reused 0
+			Receiving objects: 100% (19/19), done.
+			Resolving deltas: 100% (2/2), done.
+		 */
+		
+		//git config user.name, user.email 등록
+		//git remote - origin ~~~ 원격저장소도 origin 별칭으로 등록
+		
+		//[이클립스 + git명령어] 
+		//1. JavaClass-SiSt 폴더 사용
+		//			ㄴ바로 Eclipse 실행
+		//			ㄴgitPro 자바프로젝트 실행
+		//2. GitHub
+		//			javaPro 원격저장소 생성
+		//3. javaPro 원격저장소를 복제(clone)
+		//			ㄴ https://github.com/yuejin0608/javaPro.git 반드시 코드 먼저 복사
+		//3-2. C:\Users\유저\git\javaPro 로컬 저장소 설정
+		//			ㄴ .git폴더
+		//			ㄴ. 원격저장소로부터 복제한 폴더,파일
+		//4. 충돌 처리 + merge
+		//버전확인
+
+	}//main
+}//class
