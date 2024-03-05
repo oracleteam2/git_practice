@@ -1,0 +1,36 @@
+깃 올리는 법 대략적인 순서 ..
+
+git clone  git clone https://github.com/oracleteam2/git_practice.git
+--> 깃허브 파일 복사(클론)
+
+git init
+--> 로컬 저장소 생성(.git)
+
+git checkout -b yujin
+--> 브랜치 "yujin"으로 변경
+
+git remote add origin https://github.com/oracleteam2/git_practice.git
+--> 원격 저장소 등록
+
+git remote -v
+origin  https://github.com/oracleteam2/git_practice.git (fetch)
+origin  https://github.com/oracleteam2/git_practice.git (push)
+--> 확인
+
+git pull origin main
+
+git push --set-upstream origin yujin
+-> 깃에서 브랜치생성됬는지 확인
+---------------------------------------------------- 위는 초기세팅으로 보면 될듯 --------------------------------------------------------
+
+** 로컬에서 수정 후 pull **
+
+git pull origin main
+
+git add .
+
+git commit -m "yujin"
+
+git push
+
+
