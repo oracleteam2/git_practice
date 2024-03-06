@@ -22,16 +22,28 @@ git pull origin main
 
 git push --set-upstream origin yujin
 -> 깃에서 브랜치생성됬는지 확인
----------------------------------------------------- 위는 초기세팅으로 보면 될듯 --------------------------------------------------------
+------------------------------------------------- 위는 초기세팅으로 보면 될듯 --------------------------------------------------------
 
-** 로컬에서 수정 후 pull **
+1. pull할게 없다면(GitHub repository에 수정사항 X) pull하지않고 git add . -> git commit -m "" -> git push 가능
+   예를 들어 오늘 수업한 파일을 내 개인 리포지토리에 올릴 경우 수정된 내용은 없고 push만 하면 되는 상황이라 pull하지않아도됨
+   git add . -> 모든 변경사항 올리는 경우
+   git add [파일] -> 특정 파일의 변경사항을 올리는 경우
 
-git pull origin main
+   git commit -m "yujin"
 
-git add .
+   git push
 
-git commit -m "yujin"
 
-git push
+2. 깃허브 리포지토리에 수정된게 있다면
+   git pull origin main
+
+   * 수정할 내용 로컬에서 수정 * 
+
+   git add . -> 모든 변경사항 올리는 경우
+   git add [파일] -> 특정 파일의 변경사항을 올리는 경우
+
+   git commit -m "yujin"
+
+   git push
 
 
