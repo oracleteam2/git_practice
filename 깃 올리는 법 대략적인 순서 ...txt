@@ -5,6 +5,7 @@ git clone  git clone https://github.com/oracleteam2/git_practice.git
 
 git init
 --> 로컬 저장소 생성(.git)
+--> 로컬 저장소 경로 확인
 
 git checkout -b yujin
 --> 브랜치 "yujin"으로 변경
