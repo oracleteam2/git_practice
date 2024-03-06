@@ -33,6 +33,10 @@ git push --set-upstream origin yujin
 
    git push
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1371cff60b1209935b9428176b9f35db7047dbdf
 2. 깃허브 리포지토리에 수정된게 있다면
    git pull origin main
 
