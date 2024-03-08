@@ -52,7 +52,7 @@ git push --set-upstream origin yujin
    git push
 
 
-기존 remote 제거
+- 기존 remote 제거하는법
 
 git remote remove origin
 
