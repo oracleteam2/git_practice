@@ -9,7 +9,7 @@ public class Hello {
 *System.out.println("Hello!");
 *=======
 * System.out.println("hellotest dong 123123");
-
+tttttttttttttttttttttttttttt
 >>>>>>> 6e4d6b99f8c5ca332897b9784d1bf57521b261b7
 This branch has conflicts that must be resolved 
 -> [pull origin main을 한 후에 다른 작업자가 저와 같은 라인을 수정하고, 그 수정한 내역을 master 와 합쳤을때(merge) 발생]
