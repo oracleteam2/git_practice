@@ -1,25 +1,38 @@
 깃 올리는 법 대략적인 순서 ..
 
+git git config --global user.name "사용할 이름"
+git git config --global user.email "사용할 이메일"
+--> 이름, 이메일 설정
+
 git init
 --> 로컬 저장소 생성(.git)
 --> 로컬 저장소 경로 확인
 
 git checkout -b yujin
---> 브랜치 "yujin"으로 변경
+--> 브랜치 "yujin"으로 생성
+
+(만약 브랜치가 이미 존재해서 변경하고 싶다면)
+git checkout yujin
+--> yujin 브랜치로 변경
+
 
 git remote add origin https://github.com/oracleteam2/git_practice.git
 --> 원격 저장소 등록
 
+
 git remote -v
 origin  https://github.com/oracleteam2/git_practice.git (fetch)
 origin  https://github.com/oracleteam2/git_practice.git (push)
---> 확인
+--> 저장소 확인
+
 
 - 1. git pull origin main
+--> 메인 브랜치에 있는 자료를 땡겨옴.
 
 - 2. git clone  git clone https://github.com/oracleteam2/git_practice.git
      --> 깃허브 파일 복사(클론)
      --> 클론 할 경우 파일안에 파일이 또 생기는 번거로움이 발생
+     --> git pull 선호
 
 git push --set-upstream origin yujin
 -> 깃에서 브랜치생성됬는지 확인
@@ -34,6 +47,7 @@ git push --set-upstream origin yujin
    git add [파일] -> 특정 파일의 변경사항을 올리는 경우
 
    git commit -m "yujin"
+  --> "" 안에 쓰는 문구는 본인이 쓰고싶은 문구
 
    git push
 
@@ -42,7 +56,7 @@ git push --set-upstream origin yujin
 
    git pull origin main
 
-   * 수정할 내용 로컬에서 수정 * 
+   * 수정할 내용 로컬에서 수정 *
 
    git add . -> 모든 변경사항 올리는 경우
    git add [파일] -> 특정 파일의 변경사항을 올리는 경우
@@ -51,4 +65,8 @@ git push --set-upstream origin yujin
 
    git push
 
+
+- 기존 remote 제거하는법
+
+git remote remove origin
 
