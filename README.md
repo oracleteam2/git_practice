@@ -1,2 +1,3 @@
 깃 허브 협업 연습 레포지토리
-![dangeun drawio](https://github.com/oracleteam2/git_practice/assets/126844607/b47bc757-d6ad-4043-8fd3-9a8505cdc638)
+![호날두](https://github.com/oracleteam2/git_practice/assets/156775499/69280243-2f66-4b66-bd00-5bbca6e96d11)
+siu
